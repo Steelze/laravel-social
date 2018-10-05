@@ -36,7 +36,8 @@ class ProfileController extends Controller
         Auth::user()->update([
             'profile' => $path,
         ]);
-        return redirect()->route('view.profile', Auth::user()->slug)->with('info', 'Avatar Updated Succesfully');
+        return response()->json('', 200);
+        // return redirect()->route('view.profile', Auth::user()->slug)->with('info', 'Avatar Updated Succesfully');
     }
     
 }
