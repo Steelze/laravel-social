@@ -9,7 +9,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <script>window.Laravel =  { csrfToken: '{{ csrf_token() }}' }</script>
-		<title>News Feed | Check what your friends are doing</title>
+		<title>News Feed</title>
 
         <!-- Stylesheets
         ================================================= -->

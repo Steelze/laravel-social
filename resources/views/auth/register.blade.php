@@ -30,9 +30,6 @@
                     <option value="" selected>Select Gender</option>
                     <option value="male" {{ old('gender') === 'male' ? 'selected' : '' }} >Male</option>
                     <option value="female" {{ old('gender') === 'female' ? 'selected' : '' }} >Female</option>
-                    <option value="bisexual" {{ old('gender') === 'bisexual' ? 'selected' : '' }} >Bisexual</option>
-                    <option value="transgender" {{ old('gender') === 'transgender' ? 'selected' : '' }} >Transgender</option>
-                    <option value="confused" {{ old('gender') === 'confused' ? 'selected' : '' }} >Confused</option>
                 </select>
                 @if ($errors->has('gender'))
                     <span class="invalid-feedback" role="alert">
